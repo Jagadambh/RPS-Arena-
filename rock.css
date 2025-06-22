@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+}
+
+/* This is your main content area */
+main {
+    flex: 1;
+}
+
+h1 {
+    background-color: rgb(8, 8, 94);
+    color: rgb(255, 14, 14);
+    height: 6rem;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+}
+
+.choices-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.choices {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.choices:hover {
+    transform: scale(1.1);
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #333;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    color: rgb(8, 8, 94);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.score p:first-child {
+    font-size: 2rem;
+    color: red;
+}
+
+.msg-container {
+    margin-top: 2rem;
+}
+
+#msg {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: green;
+}
+
+/* === Footer at bottom === */
+footer {
+    background-color: #060000;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
